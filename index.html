@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greendise Landscaping Co.</title>
+    <link rel="icon" type="image/x-icon" href="./assets/ico.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="./src/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./src/mdb.min.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+        function drop()
+        {
+            var btn=document.getElementById("dropdown")
+            var menu=document.getElementById("menu")
+            console.log(window.getComputedStyle(menu).visibility)
+            if(window.getComputedStyle(menu).visibility=="hidden") {
+                menu.style.visibility="visible"
+                btn.innerHTML='<i class="fas fa-arrow-left"></i>'
+            }
+            else if(window.getComputedStyle(menu).visibility=="visible") {
+                menu.style.visibility="hidden"
+                btn.innerHTML='<i class="fas fa-bars"></i>'
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="./index.html"><img src="./assets/logo-white.png"></a>
+        </div>
+        <div class="drop desktop-hidden">
+            <p id="dropdown" onclick="drop()"><i class="fas fa-bars"></i></p>
+        </div>
+        <div class="navbar-right phone-hidden">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">What we do</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        
+    </div>
+    <div id="menu" class="dropdown-phone desktop-hidden">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">What we do</a>
+        <a href="./contact.html">Contact Us</a>
+    </div>
+
+    <div class="banner">
+        <p>We turn your backyard into a Paradise. </p>
+        <a href="./contact.html"><button>Contact Us</button></a>
+    </div>
+
+    <div class="cover-paragraph">
+        <p class="heading">Hello there,</p>
+        <p class="cover-content">
+            <span>W</span>elcome to Greendise Landscaping Company! We are a team of experienced and passionate professionals dedicated to creating beautiful outdoor spaces for our clients. From small backyard makeovers to complete property transformations, we have the skills and expertise to bring your vision to life. Our team works closely with each client to understand their unique needs and preferences, and we use only the highest quality materials and techniques to ensure that the end result exceeds expectations. Whether you are looking to add some curb appeal to your home, create a relaxing retreat in your backyard, or simply maintain your property's natural beauty, we are here to help. Contact us today to schedule a consultation and start turning your outdoor dreams into a reality.
+            <br>
+        </p>
+    </div>
+    
+    <div class="what">
+        <p class="heading">What we do?</p>
+            <!-- Carousel wrapper -->
+    <div id="carouselMaterialStyle" class="carousel what-container slide carousel-fade" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+    
+        <!-- Inner -->
+        <div class="carousel-inner rounded-5 shadow-4-strong">
+        <!-- Single item -->
+        <div class="carousel-item active">
+            <img src="./assets/garden.jpg" class="d-block w-100"
+            alt="Canyon at Nigh" />
+            <div class="carousel-caption">
+            <h5>Garden design</h5>
+            <p class="phone-hidden">This involves creating a plan for the layout and design of a garden, including selecting plants and other features.</p>
+            </div>
+        </div>
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="./assets/lawn.jpg" class="d-block w-100"
+            alt="Sunset Over the City" />
+            <div class="carousel-caption">
+            <h5>Lawn maintenance</h5>
+            <p class="phone-hidden">This includes mowing, fertilizing, aerating, and watering the lawn.</p>        
+            </div>
+        </div>
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="./assets/terrace.jpg" class="d-block w-100"
+            alt="Sunset Over the City" />
+            <div class="carousel-caption">
+            <h5>Terrace Gardening</h5>
+            <p class="phone-hidden">The ultimate utilization of space to enhance the aesthetic beauty of your home or workspace.</p>
+            </div>
+        </div>
+    
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="./assets/hardscaping.jpg" class="d-block w-100"
+            alt="Cliff Above a Stormy Sea" />
+            <div class="carousel-caption">
+            <h5>Hardscaping</h5>
+            <p class="phone-hidden">This includes installing features such as walkways, patios, retaining walls, and water features.</p>
+            </div>
+        </div>
+
+         <!-- Single item -->
+        <div class="carousel-item">
+            <img src="./assets/lighting.jpg" class="d-block w-100"
+            alt="Canyon at Nigh" />
+            <div class="carousel-caption">
+            <h5>Landscape lighting</h5>
+            <p class="phone-hidden">This involves installing and maintaining outdoor lighting to highlight features of the landscape.</p>
+            </div>
+        </div>
+         
+        <!-- Single item -->
+        <div class="carousel-item">
+            <img src="./assets/shrubs.jpg" class="d-block w-100"
+            alt="Canyon at Nigh" />
+            <div class="carousel-caption">
+            <h5>Tree and shrub care</h5>
+            <p class="phone-hidden">This includes pruning, trimming, and removing trees and shrubs as needed.</p>
+            </div>
+        </div>
+        </div>
+        <!-- Inner -->
+    
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel wrapper -->
+        <p class="what-paragraph"><a href="./about.html">Click Here</a> to learn more on what we do</p>
+    </div>
+
+
+
+
+
+    <div class="testimonials">
+        <p class="heading">Testimonials</p>
+        <!-- Carousel wrapper -->
+        <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Anna Deynah</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        We hired Greendise Landscaping Co. to completely revamp our backyard and we couldn't be happier with the results. The team was professional, punctual, and went above and beyond to make sure we were satisfied with the final product. We highly recommend Greendise Landscaping Co. for anyone in need of landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">John Doe</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        From start to finish, our experience with Greendise Landscaping Co. was exceptional. The team listened to our vision and made it a reality, all while staying within our budget. Our yard looks amazing and we get compliments from neighbors all the time. We will definitely be using Greendise Landscaping Co. for all of our future landscaping needs.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                        <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Maria Kate</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        We were so impressed with the work that Greendise Landscaping Co. did on our property. They were able to transform our yard into a stunning and inviting outdoor space that we can enjoy with our family and friends. The team was professional and efficient, and they were able to complete the job on time and within budget. We highly recommend Greendise Landscaping Co. to anyone in need of top-quality landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Single item -->
+            <div class="carousel-item">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">John Doe</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        I was struggling to find the right company to handle our landscaping project, but Greendise Landscaping Co. exceeded all of our expectations. Not only were they able to complete the job on time, but they also offered valuable suggestions and were always available to answer any questions we had. I highly recommend Greendise Landscaping Co. for anyone in need of professional and reliable landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Alex Rey</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        We were so impressed with the work that Greendise Landscaping Co. did on our property. From the initial consultation to the final touches, the team was professional and efficient. They were able to transform our yard into the outdoor oasis we had always wanted. We will definitely be using Greendise Landscaping Co. for all of our future landscaping needs.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                        <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Nancy</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        My family was blown away by the level of professionalism and attention to detail demonstrated by Greendise Landscaping Co.. From start to finish, they were able to turn our vision into a reality, creating a beautiful and functional outdoor space that we can enjoy for years to come. We highly recommend Greendise Landscaping Co. to anyone in need of top-quality landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Single item -->
+            <div class="carousel-item">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Annie</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        I had a great experience working with Greendise Landscaping Co.. The team was able to bring our landscaping ideas to life, and the final product was exactly what we had hoped for. They were also very communicative throughout the process, which really helped put our minds at ease. I highly recommend Greendise Landscaping Co. to anyone in need of professional landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Jimmy</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        We were so impressed with the work that Greendise Landscaping Co. did on our property. They were able to turn our bland and uninspiring yard into a beautiful and welcoming outdoor space. The team was professional and efficient, and they were able to complete the job on time and within budget. We highly recommend Greendise Landscaping Co. to anyone in need of top-quality landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                        <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-lg-4 d-none d-lg-block">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+                        style="width: 150px;" />
+                    <h5 class="mb-3">Maria Khan</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        We hired Greendise Landscaping Co. to revamp our front yard and we couldn't be happier with the results. The team was able to take our ideas and turn them into a reality, creating a beautiful and functional outdoor space that we can enjoy all year round. We highly recommend Greendise Landscaping Co. to anyone in need of professional landscaping services.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- Inner -->
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">
+                <button class="carousel-control-prev position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel wrapper -->
+    </div>
+    <footer>
+        <div class="footer-wrapper phone-hidden">
+            <div class="footer-image">
+                <img src="./assets/footer-square.png">
+            </div>
+            <div class="address">
+                <h2>Address</h2>
+                <p>
+                    Greendise Landscaping Co.<br>
+                    No-324, Sampige Rd,<br> 
+                    Malleswaram, Bangalore<br>
+                    Karnataka
+                    560003<br>
+                    Phone Number: 080 2331 8588<br>
+                    India<br>
+                </p>
+            </div>
+            <div class="follow">
+                <h2>Follow us on</h2>
+                <p>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i>Instagram</a><br>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i>Facebook</a><br>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i>Twitter</a><br>
+                </p>
+            </div>
+            
+        </div>
+        <div class="footer-wrapper-phone desktop-hidden">
+            <div class="address-phone">
+                <h2>Address</h2>
+                <p>
+                    Greendise Landscaping Co.<br>
+                    No-324, Sampige Rd,<br> 
+                    Malleswaram, Bangalore<br>
+                    Karnataka
+                    560003<br>
+                    Phone Number: 080 2331 8588<br>
+                    India<br>
+                </p>
+            </div>
+            <div class="footer-image-phone">
+                <img src="./assets/footer-logo.png">
+            </div>
+            
+            <div class="follow-phone">
+                <p>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </p>
+            </div>
+            
+        </div>
+
+        <p class="copyright">Copyright © 2022, Greendise Landscaping Co.
+        </p>
+    </footer>
+</body>
+</html>

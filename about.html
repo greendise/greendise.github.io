@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What we do</title>
+    <link rel="icon" type="image/x-icon" href="./assets/ico.png">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="./src/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./src/mdb.min.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="./about.css">
+    <script type="text/javascript">
+        function drop()
+        {
+            var btn=document.getElementById("dropdown")
+            var menu=document.getElementById("menu")
+            console.log(window.getComputedStyle(menu).visibility)
+            if(window.getComputedStyle(menu).visibility=="hidden") {
+                menu.style.visibility="visible"
+                btn.innerHTML='<i class="fas fa-arrow-left"></i>'
+            }
+            else if(window.getComputedStyle(menu).visibility=="visible") {
+                menu.style.visibility="hidden"
+                btn.innerHTML='<i class="fas fa-bars"></i>'
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="./index.html"><img src="./assets/logo-white.png"></a>
+        </div>
+        <div class="drop desktop-hidden">
+            <p id="dropdown" onclick="drop()"><i class="fas fa-bars"></i></p>
+        </div>
+        <div class="navbar-right phone-hidden">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">What we do</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    </div>
+    
+    <div id="menu" class="dropdown-phone desktop-hidden">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">What we do</a>
+        <a href="./contact.html">Contact Us</a>
+    </div>
+
+    <div class="banner">
+        <p>What we do</p>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/garden.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Garden Design</h2>
+                <p>Our team of experienced designers will work with you to create a beautiful and functional outdoor space that meets your needs and fits your budget. We offer a range of garden design services, including planning, layout, plant selection, and installation. We can help you choose the perfect plants for your garden, based on your climate, soil conditions, and design preferences. Our designers are also skilled at incorporating elements such as water features, outdoor lighting, and hardscaping into your garden design.    </p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/lawn.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Lawn Maintenance</h2>
+                <p>Keep your lawn looking its best with our regular lawn maintenance services. Our team can handle everything from mowing and edging to fertilization and weed control. We use high-quality equipment and products to ensure a healthy and beautiful lawn. We can also help you troubleshoot any issues with your lawn, such as brown patches or weeds, and provide recommendations for improving its health and appearance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/terrace.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Terrace Gardening</h2>
+                <p>Transform your terrace into a beautiful and relaxing outdoor space with our terrace gardening services. We offer design, installation, and maintenance services to help you create the perfect oasis. Our team can help you choose the right plants and design elements for your terrace, based on your space and style preferences. We can also help you maintain your terrace garden, ensuring that your plants stay healthy and thrive.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/hardscaping.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Handscaping</h2>
+                <p>Add a personal touch to your outdoor space with our handscaping services. We can design and install custom features such as walkways, patios, retaining walls, and water features. Our team is skilled at creating functional and aesthetically pleasing handscaping elements that complement your overall landscape design. We use high-quality materials and workmanship to ensure that your handscaping features will last for years to come.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/lighting.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Landscaping Lighting</h2>
+                <p>Enhance the beauty and functionality of your outdoor space with our landscaping lighting services. We can design and install a range of lighting solutions to suit your needs and preferences. From accent lighting to pathway lighting, we can help you create the perfect ambiance for your outdoor space. Our team is also skilled at installing and maintaining lighting systems, ensuring that they function reliably and safely.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="image">
+                <img src="./assets/shrubs.jpg">
+            </div>
+            <div class="content-body">
+                <h2>Tree and Shrub Care</h2>
+                <p>Keep your trees and shrubs healthy and looking their best with our tree and shrub care services. We offer a range of services, including pruning, fertilization, and pest control. Our team is trained to identify and address any issues with your trees and shrubs, such as disease or pests, and provide recommendations for improving their health and appearance. We also offer emergency tree care services for any unexpected issues that may arise.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrapper phone-hidden">
+            <div class="footer-image">
+                <img src="./assets/footer-square.png">
+            </div>
+            <div class="address">
+                <h2>Address</h2>
+                <p>
+                    Greendise Landscaping Co.<br>
+                    No-324, Sampige Rd,<br> 
+                    Malleswaram, Bangalore<br>
+                    Karnataka
+                    560003<br>
+                    Phone Number: 080 2331 8588<br>
+                    India<br>
+                </p>
+            </div>
+            <div class="follow">
+                <h2>Follow us on</h2>
+                <p>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i>Instagram</a><br>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i>Facebook</a><br>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i>Twitter</a><br>
+                </p>
+            </div>
+            
+        </div>
+        <div class="footer-wrapper-phone desktop-hidden">
+            <div class="address-phone">
+                <h2>Address</h2>
+                <p>
+                    Greendise Landscaping Co.<br>
+                    No-324, Sampige Rd,<br> 
+                    Malleswaram, Bangalore<br>
+                    Karnataka
+                    560003<br>
+                    Phone Number: 080 2331 8588<br>
+                    India<br>
+                </p>
+            </div>
+            <div class="footer-image-phone">
+                <img src="./assets/footer-logo.png">
+            </div>
+            
+            <div class="follow-phone">
+                <p>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </p>
+            </div>
+            
+        </div>
+
+        <p class="copyright">Copyright © 2022, Greendise Landscaping Co.
+        </p>
+    </footer>
+</body>
+</html>

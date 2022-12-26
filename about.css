@@ -1,0 +1,235 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: unset;
+}
+body {
+    background-color: #f0fff6;
+}
+.navbar {
+    z-index:100;
+    width: 100vw;
+    padding: 0px;
+    background-color: #056830;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.navbar-left img {
+    padding: 5px;
+    padding-left: 40px;
+    height: 74px;
+}
+.navbar-right {
+    margin-left: auto;
+    margin-right:80px;
+}
+.navbar-right a{
+    font-family: 'Alegreya SC', serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    padding: 0px 20px 0px 20px;
+}
+.navbar-right a:hover{
+    border-bottom: 2px solid white;
+}
+.banner {
+    height: 300px;
+    background-image: url("./assets/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+.banner p {
+    position: relative;
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 123px ;
+    font-size: 70px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 4px solid #23bb65;
+}
+.content-wrapper {
+    align-items: center;
+    display: flex;
+    padding: 40px;
+}
+.image {
+    width: 30vw;
+}
+.image img {
+    width: 30vw;
+    border-radius: 30px 0px 30px 0px;
+}
+.content-body {
+    padding-left: 40px;
+    width: 70vw;
+}
+.content-body h2 {
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 4px solid #23bb65;
+    width: fit-content;
+
+}
+.content-body p {
+    font-size: 20px;
+    text-align: justify;
+}
+footer {
+    margin-top: 40px;
+    color: white;
+    background-color: #232424;
+    font-size: 20px;
+}
+footer h2 {
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: #23bb65;
+}
+.footer-wrapper {
+   display: flex;
+}
+.footer-image {
+    text-align: center;
+    width: 30vw;
+}
+.address {
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.follow {
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.follow a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.follow i {
+    padding-right: 10px;
+    /* font-size: 20px; */
+    color: #23bb65;
+}
+.copyright {
+    margin: 0px;
+    padding: 20px;
+    text-align: center;  
+    background-color: black; 
+}
+
+
+.desktop-hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .phone-hidden {
+        display: none;
+    }
+    .desktop-hidden {
+        display:block;
+    }
+    .navbar {
+        z-index:100;
+        width: 100vw;
+        padding: 0px;
+        background-color: #056830;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    .navbar-left img {
+        padding: 5px;
+        padding-left: 10px;
+        height: 65px;
+    }
+    .drop {
+        padding-right: 20px;
+    }
+    .drop p {
+        margin: 0px;
+        color: white;
+        font-size: 30px;
+    }
+    .dropdown-phone {
+        z-index: 99; 
+        background-color: #056830;
+        top: 75px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100vw;
+        position: fixed;
+        visibility: hidden;
+    }
+    .dropdown-phone a {
+        font-family: 'Alegreya SC', serif;
+        color: white;
+        font-size: 20px;
+        display: block;
+        padding: 10px 50px;
+    }
+    .banner {
+        height: auto;
+    }
+    .banner p {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 40px;
+        border-bottom: 0px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        padding:0px;
+        padding-top: 40px;
+    }
+    .image {
+        width: 90vw;
+    }
+    .image img {
+        width: 90vw;
+    }
+    .content-body {
+        width: 90vw;
+        padding-left: 0px;
+    }
+    .content-body h2 {
+        font-size: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+    }
+    .content-body p {
+        font-size: 18px;
+    }
+    .address-phone  {
+        padding: 0px 40px;
+        font-size: 18px;
+    }
+    .footer-image-phone {
+        width: 100vw;
+        text-align: center;
+    }
+    .footer-image-phone img{
+        width: 90vw;
+        max-width: 340px ;
+    }
+    .follow-phone {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .follow-phone a {
+        font-size: 25px;
+        color: #2fa863;
+        padding: 0px 10px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
